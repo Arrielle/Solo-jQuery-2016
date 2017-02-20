@@ -5,7 +5,7 @@ $(document).ready (function (){
 $('button').on('click', function(){
   var $color = $(this).data("color");
   console.log($color);
-  $('#color-block-container').append('<div class = "color-cube ' + $color + '"></div>');
+  $('.container').append('<div class = "color-cube ' + $color + '"></div>');
 
   numColorBlocks = $('#' + $color).text();
   console.log(numColorBlocks);
